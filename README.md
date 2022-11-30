@@ -2,3 +2,5 @@
 
 * [Remoção de outliers](./remover_outliers.md)
 * [Redes neurais - Regressão](./redes_neurais_regressao.md)
+* [Lazy Classifiers]
+* [Gráficos e Plots](./graficos)
