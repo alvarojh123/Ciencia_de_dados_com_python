@@ -14,8 +14,6 @@ from sklearn.neural_network import MLPRegressor
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import r2_score
 from sklearn.metrics import  mean_absolute_percentage_error
-# 
-from sklearn.preprocessing import StandardScaler
 
 ```
 
@@ -26,7 +24,8 @@ from sklearn.preprocessing import StandardScaler
 X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.3, random_state=101)
 ```
 
-* 
+* Definimos a arquitertura, construimos o modelo de Redes neurais e corremos o modelo.
+
 ```python
 
 # Definimos a arquitetura
