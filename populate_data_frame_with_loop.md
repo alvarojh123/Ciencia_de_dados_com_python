@@ -1,6 +1,6 @@
-# Populate dataframe with for loop
+# Criar um dataframe apartir de outro (usando for loop)
 
-* Criamos o dataframe teste
+* Criamos o dataframe com dados fake.
 
 ```python
 import pandas as pd
@@ -8,6 +8,7 @@ import pandas as pd
 dados_fake = {'idade': [1,2,3,4,5,6],
 			  'sexo': ['M','M','F','F', 'F', 'F'],
 			  'cor': ['A', 'B', 'A', 'B', 'A', 'B']}
+
 dataframe = pd.DataFrame(dados_fake) 
 
 ```
@@ -54,4 +55,7 @@ new_df = pd.DataFrame(df_dict)
 ```
 
 
-### Casos especiais 
+### Casos especiais: Filtrar por 'Cor'
+
+Agora criaremos um novo dataframe apartir de um existente, mas o novo dataframe
+apenas terá cores específicas. 
