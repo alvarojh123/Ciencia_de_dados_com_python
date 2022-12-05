@@ -1,6 +1,6 @@
 # Predições com Lazy Predict
 
-** Alvaro J. Lopez ** 
+**Alvaro J. Lopez** 
 
 
 A libreria chamada de ```lazypredict``` permite a utilização de uma diversos 
