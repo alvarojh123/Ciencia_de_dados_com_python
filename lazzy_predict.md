@@ -1,20 +1,25 @@
-# Predições com Lazy Predict
+# Predições com lazypredict
 
 **Alvaro J. Lopez** 
 
 
-A libreria chamada de ```lazypredict``` permite a utilização de uma diversos 
-modelos de machine learning usando apenas uma línea de código.
+```lazypredict``` é uma libreria que nos permite testar diversos algoritmos de machine learning
+usando apenas poucas linhas de código. Assim graças a essa libreria podemos explorar diversos 
+modelos em pouco tempo.
 
-A libreria ```lazypredict``` pode ser usada para resolver problemas de 
-regressão (usando o módulo ```LazyRegressor```) e classificação (usando o módulo ```LazyClassifier```)
+Atualmente ```lazypredict``` conta com algoritmos de machine learning para resolver problemas
+de classificação (usando o módulo ```LazyClassifier```) e regressão (usando o módulo ```LazyRegressor```).
+
+Neste tutorial vamos a mostrar como usar a libreria ```lazypredict``` para resolver 
+problemas de classificação e regressão.
+
+Como primeiro passo devemos instalar a libreria ```lazypredict```
 
 * Instalamos as librerias
 
 ```python
 pip install lazypredict
 ```
-
 
 
 ## Problema de Classificação:  ```LazyClassifier```
@@ -27,7 +32,7 @@ from sklearn.model_selection import train_test_split
 from sklearn import datasets
 ```
 
-* Carregamos os dados e definimos as variáveis dependentes e independentes.
+* Carregamos os dados e definimos as variáveis dependentes (X) e independentes (y).
 
 ```python
 # Carregar os dados
@@ -35,26 +40,37 @@ data = datasets.load_breast_cancer()
 X, y = data.data, data.target
 ```
 
-* Dividimos os dados em dados de treino e teste
+* Dividimos os dados em dados de treino e dados de teste
 
 ```python
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.2, random_state=42)
 ```
 
-* Realizar o fit dos modelos do ```LazyClassifier```
+* Realizar o fit dos modelos usando ```LazyClassifier```
 
 ```python
 # Fit dos modelos
 clf = LazyClassifier(predictions=True)
-models, predictions = clf.fit(X_train, X_test, y_train, y_test)
+modelos, predicoes = clf.fit(X_train, X_test, y_train, y_test)
 ```
+
+A variável ```modelos``` é um dataframe que contém as informações sobre a performance 
+de cada modelo testado usando o ```LazyClassifier```,
 
 * Imprimir os resultados
 
-O resultados estará no dataframe models.
+Para imprimir os resultados usaremos a seguinte linha de código. 
+
+```python
+from tabulate import tabulate
+
+print(tabulate(modelos, headers='keys', tablefmt='psql'))
+```
 
 
 ```
+Output:
+
 +-------------------------------+------------+---------------------+-----------+------------+--------------+
 | Model                         |   Accuracy |   Balanced Accuracy |   ROC AUC |   F1 Score |   Time Taken |
 |-------------------------------+------------+---------------------+-----------+------------+--------------|
@@ -92,3 +108,10 @@ O resultados estará no dataframe models.
 `
 ## Problema de Regressão:  ```LazyRegressor```
 
+* Importamos as librerias
+
+```python
+from lazypredict.Supervised import LazyRegressor
+from sklearn.model_selection import train_test_split
+from sklearn import datasets
+```
