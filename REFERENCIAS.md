@@ -34,3 +34,10 @@ https://towardsdatascience.com/multi-variate-outlier-detection-in-python-e900a33
 ](https://python-for-multivariate-analysis.readthedocs.io/)
 
 * [Introduction To Multivariate Analysis](https://www.kaggle.com/code/sanikamal/introduction-to-multivariate-analysis)
+
+
+
+#### Lazy Algorithms
+
+* [Lazy Predict: fit and evaluate all the models from scikit-learn with a single line of code
+](https://towardsdatascience.com/lazy-predict-fit-and-evaluate-all-the-models-from-scikit-learn-with-a-single-line-of-code-7fe510c7281)

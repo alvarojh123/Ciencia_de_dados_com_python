@@ -9,5 +9,6 @@
 
 * [Análise Multivariada com Python](./analise_multivariada_python.md)
 
+* [Predições com Lazy Predict](./lazzy_predict.md)
 
 
