@@ -12,6 +12,7 @@ https://towardsdatascience.com/multi-variate-outlier-detection-in-python-e900a33
 
 #### SHAP 
 
+
 * [SHAP for Categorical Features](https://towardsdatascience.com/shap-for-categorical-features-7c63e6a554ea)
 
 #### One_hot_enconder and get_dummies
@@ -37,7 +38,10 @@ https://towardsdatascience.com/multi-variate-outlier-detection-in-python-e900a33
 
 
 
-#### Lazy Algorithms
+#### lazypredict
 
 * [Lazy Predict: fit and evaluate all the models from scikit-learn with a single line of code
 ](https://towardsdatascience.com/lazy-predict-fit-and-evaluate-all-the-models-from-scikit-learn-with-a-single-line-of-code-7fe510c7281)
+
+
+* [Salvar modelos] (https://medium.com/analytics-vidhya/save-and-load-your-scikit-learn-models-in-a-minute-21c91a961e9b)
