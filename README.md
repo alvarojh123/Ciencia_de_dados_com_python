@@ -8,6 +8,9 @@
 
 * [Predições com Lazy Predict](./lazzy_predict.md)
 
+* [Hyperparameter tunning em modelos de machine learning](./hyperparameter_tunning.md)
+
+
 
 ## Explicando modelos de machine learning
 
@@ -27,6 +30,5 @@
 
 
 * [Análise Multivariada com Python](./analise_multivariada_python.md)
-
 
 
