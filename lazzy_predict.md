@@ -1,6 +1,6 @@
 # Predições com lazypredict
 
-**Alvaro J. Lopez** 
+**Alvaro J. Lopez** #
 
 
 ```lazypredict``` é uma libreria que nos permite testar diversos algoritmos de machine learning

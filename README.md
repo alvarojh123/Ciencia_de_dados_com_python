@@ -11,7 +11,7 @@
 
 ## Explicando modelos de machine learning
 
-* [SHAP: SHapley Additive exPlanations ](./shap.md)
+* [SHAP: SHapley Additive exPlanations](./shap.md)
 
 
 ## Visualização
