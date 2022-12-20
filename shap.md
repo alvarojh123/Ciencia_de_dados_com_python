@@ -59,7 +59,14 @@ shap.plots.bar(shap_values)
 ```python
 shap.summary_plot(shap_values)
 ```
-<img src="./imagenes/bar-plot.png">
+<img src="./imagenes/summary_plot.png">
+
+* Summary plot - Violin
+
+```python
+shap.summary_plot(shap_values, plot_type='violin')
+```
+<img src="./imagenes/vioin.png">
 
 
 * Waterfall plot
