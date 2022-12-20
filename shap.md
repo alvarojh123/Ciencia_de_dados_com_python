@@ -52,3 +52,19 @@ Com os ```shap_values``` podemos criar varios tipos de gráficos que nos irão a
 shap.plots.bar(shap_values)
 ```
 <img src="./imagenes/bar-plot.png">
+
+
+* Summary plot
+
+```python
+shap.summary_plot(shap_values)
+```
+<img src="./imagenes/bar-plot.png">
+
+
+* Waterfall plot
+
+```python
+shap.plots.waterfall(shap_values[0])
+```
+<img src="./imagenes/waterfall.png">
