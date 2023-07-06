@@ -16,7 +16,7 @@ import pandas as pd
 
 ```python
 nome_archivo = 'meu_df_quero_exportar.csv'
-path = '/content/drive/My Drive/lugar_para_salvar' + nome_archivo
+path = '/content/drive/My Drive/lugar_para_salvar/' + nome_archivo
 ```
 
 * Salvar o df
